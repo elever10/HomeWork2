@@ -12,7 +12,7 @@ public class Task3 {
         String[] ownerNames = {"Jane", "Ann", "Jack", "Own", "Lane"};
 
         String ownerName = "Own";
-        double with = 490;
+        double with = 470;
 
         withdr(balances, ownerNames, ownerName, with);
     }
@@ -32,11 +32,17 @@ public class Task3 {
             }
         }
         // let's calculate withdraw with commission
-        if (balance >= twith) {
-            double new_balance = balance - twith;
-            System.out.println(user + " " + with + " " + new_balance);
-        } else {
-            System.out.println(user + " NO");
+
+        if (user != ""){
+            if (balance >= twith) {
+                double new_balance = balance - twith;
+                System.out.println(user + " " + with + " " + new_balance);
+            } else {
+                System.out.println(user + " NO");
+            }
+        }
+        else {
+            System.out.println("User with such name was not found");
         }
     }
 }
