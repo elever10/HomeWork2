@@ -1,4 +1,4 @@
-package Tasks2_1;
+package Tasks2;
 
 /**
  * Created by elve on 11/8/2016.
