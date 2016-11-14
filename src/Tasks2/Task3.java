@@ -1,5 +1,6 @@
 package Tasks2;
 
+import java.util.Objects;
 import java.util.StringJoiner;
 
 /**
@@ -11,8 +12,8 @@ public class Task3 {
         int[] balances = {1200, 250, 2000, 500, 3200};
         String[] ownerNames = {"Jane", "Ann", "Jack", "Own", "Lane"};
 
-        String ownerName = "Own";
-        double with = 470;
+        String ownerName = "Ann";
+        double with = 100;
 
         withdr(balances, ownerNames, ownerName, with);
     }
@@ -25,7 +26,7 @@ public class Task3 {
 
         // let's find user balance
         for (int i = 0; i <= 4; i++) {
-            if (array2[i] == ownerName) {
+            if (Objects.equals(array2[i], ownerName)) {
                 balance = array1[i];
                 user = array2[i];
                 break;
